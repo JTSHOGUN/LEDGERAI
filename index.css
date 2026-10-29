@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ink: #1c1917;
+    --teal: #0f766e;
+    --teal-dark: #115e59;
+    --teal-light: #f0fdfa;
+    --brand-primary: #0f766e;
+    --brand-primary-hover: #115e59;
+    --brand-badge-bg: #f0fdfa;
+    --brand-badge-text: #0f766e;
+    --brand-badge-border: #99f6e4;
+    --brand-surface: #f0fdfa;
+    --brand-text: #0f766e;
+    --amber: #b45309;
+    --stone-bg: #fafaf9;
+    --stone-surface: #ffffff;
+    --stone-border: #e7e5e4;
+    --stone-text: #1c1917;
+    --stone-muted: #78716c;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #0c0a09;
+  color: #f5f5f4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tabular numerals for double-entry financial data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Minimal calm scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1917;
+}
+::-webkit-scrollbar-thumb {
+  background: #44403c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0f766e;
+}

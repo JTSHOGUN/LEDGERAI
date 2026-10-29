@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  ledgerai-business:
+    build: .
+    ports:
+      - "5173:5173"
+    environment:
+      - PORT=5173
+      - HOST=0.0.0.0
+    restart: unless-stopped
